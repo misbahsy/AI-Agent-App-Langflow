@@ -28,13 +28,14 @@
 - [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
 - A [Supabase](https://supabase.com/) account
 - A [Langflow](https://langflow.org/) account or self-hosted instance
+- Alternatively, a free account on [Astra](https://astra.datastax.com/) to create a Langflow and obtain the API URL and key
 
 ## Getting Started
 
 1. Clone the repository:
 
    ```bash
-   git clone https://your-repository-url.git
+   git clone https://github.com/misbahsy/AI-Agent-App-Langflow.git
    cd your-project-name
    ```
 
@@ -50,9 +51,13 @@
    - Create a new project in the [Supabase dashboard](https://app.supabase.com/)
    - Note your project's URL and anon key (you'll need these for environment variables)
 
-4. Set up your environment variables (see [Environment Variables](#environment-variables) section)
+4. Set up Langflow:
+   - Option 1: Use a Langflow account or self-hosted instance
+   - Option 2: Create a free account on [Astra](https://astra.datastax.com/), create a Langflow, and obtain the API URL and key
 
-5. Run the development server:
+5. Set up your environment variables (see [Environment Variables](#environment-variables) section)
+
+6. Run the development server:
 
    ```bash
    npm run dev
@@ -60,12 +65,11 @@
    yarn dev
    ```
 
-6. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+7. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
 ## Environment Variables
 
 Create a `.env.local` file in the root of your project and add the following variables:
-
 ```bash
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
